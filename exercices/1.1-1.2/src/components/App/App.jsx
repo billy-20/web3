@@ -16,6 +16,7 @@ const App = () => {
 
   return (
     <div>
+            <link rel="stylesheet" href="index.css"/>
       <Header/>
       <Content part1={part1} exercises1={exercises1} 
                part2={part2} exercises2={exercises2} 
