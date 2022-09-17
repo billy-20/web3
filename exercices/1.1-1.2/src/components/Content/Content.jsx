@@ -1,6 +1,6 @@
 
+import Part from "components/Part/Part"
 import React from "react"
-import Part from'../Part/Part'
 
 const Content = (props) => {
     return(

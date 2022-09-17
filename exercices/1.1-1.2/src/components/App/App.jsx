@@ -1,9 +1,10 @@
 
 
-import React from 'react'
-import Header from '../Header/Header'
-import Total from '../Total/Total'
-import Content from '../Content/Content'
+ import React from 'react'
+
+import Header from 'components/Header/Header'
+import Content from 'components/Content/Content'
+import Total from 'components/Total/Total'
 
 const App = () => {
   const part1 = 'Fundamentals of React'
