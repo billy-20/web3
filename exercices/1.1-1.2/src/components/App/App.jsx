@@ -5,6 +5,7 @@
 import Header from 'components/Header/Header'
 import Content from 'components/Content/Content'
 import Total from 'components/Total/Total'
+import imageLogo from '../App/logo_vinci.png';
 
 const App = () => {
   const part1 = 'Fundamentals of React'
@@ -17,6 +18,8 @@ const App = () => {
   return (
     <div>
             <link rel="stylesheet" href="index.css"/>
+
+            <img src={imageLogo}></img>
       <Header/>
       <Content part1={part1} exercises1={exercises1} 
                part2={part2} exercises2={exercises2} 
