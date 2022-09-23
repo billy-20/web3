@@ -5,13 +5,13 @@
 
   import { useState } from 'react'
   const App = () => {
-    const [ counter, setCounter ] = useState(0)
+    const [ counter, setCounter ] = useState(localStorage.setItem("counter", JSON.stringify(counter)))
   
   
     const changeCount = (delta) => setCounter(counter + delta)
 
 
-
+    localStorage.setItem("counter", JSON.stringify(counter))
     return (
       <div>
       <Display counter={counter}/>
