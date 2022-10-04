@@ -1,6 +1,7 @@
 
 
 import { useState } from 'react'
+import Loading from '../Loading/Loading'
 
 import Statistics from '../Statistics/Statistics'
 
@@ -12,7 +13,20 @@ const App = () => {
  const [neutral, setNeutral] = useState(0)
   const [bad, setBad] = useState(0)
 
-  //const [allClicks, setAll] = useState([])
+  const [loading , setLoading] = useState(true);
+
+
+  console.log(loading);
+
+  setTimeout(()=>{
+    setLoading(false)
+  },3000)
+
+  if(loading){
+    return(
+      <Loading></Loading>
+    );
+  }
  
   const handleGoodclick = () => {
     //setAll(allClicks.concat(good))
